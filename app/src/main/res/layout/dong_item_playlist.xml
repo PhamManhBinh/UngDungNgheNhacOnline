@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearcarviewNghegihomnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.joooonho.SelectableRoundedImageView
+            app:sriv_left_top_corner_radius="15dp"
+            app:sriv_right_top_corner_radius="15dp"
+            app:sriv_left_bottom_corner_radius="15dp"
+            app:sriv_right_bottom_corner_radius="15dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:id="@+id/imageviewNghegihomnay_playlist"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewNghegihomnay_playlist"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:ellipsize="end"
+            android:maxWidth="150dp"
+            android:maxLines="2"
+            android:text="textview"
+            android:textStyle="bold"
+            android:textColor="#F1EEEE"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

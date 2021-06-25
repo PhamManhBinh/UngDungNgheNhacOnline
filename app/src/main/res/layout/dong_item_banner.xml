@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_banner"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewBanner">
+        <ImageView
+            android:id="@+id/imageViewSongImage"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/textViewSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tựa đề bài hát"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@id/imageViewSongImage"
+            android:layout_toRightOf="@id/imageViewSongImage"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/textViewSongTitle"
+            android:layout_toRightOf="@id/imageViewSongImage">
+            <TextView
+                android:id="@+id/textViewBannerDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="2"
+                android:layout_marginRight="10dp"
+                android:text="Đây là textview mô tả bài hát, Đây là textview mô tả bài hátĐây là textview mô tả bài hátĐây là textview mô tả bài hát"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
